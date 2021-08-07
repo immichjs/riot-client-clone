@@ -1,0 +1,35 @@
+@import './assets/scss/index.scss';
+
+body {
+  background: rgb(33,189,201);
+  background: linear-gradient(90deg, rgba(33,189,201,1) 0%, rgba(84,15,145,1) 100%);
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+
+  footer {
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .1);
+
+    p {
+      font-weight: 500;
+      font-size: 0.75rem;
+      background: #42CAD9;
+      background: -webkit-linear-gradient(to right, #42CAD9 0%, #6552B2 100%);
+      background: -moz-linear-gradient(to right, #42CAD9 0%, #6552B2 100%);
+      background: linear-gradient(to right, #42CAD9 0%, #6552B2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
