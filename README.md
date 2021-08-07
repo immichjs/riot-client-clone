@@ -1,24 +1,44 @@
-# vue-sass-template
+# RIot Client Clone
 
-## Project setup
-```
-npm install
-```
+O intuíto desse projeto, é clonar o client do League of Legends (RiotGames) aos poucos, primeiramente a interface e assim que possível melhorar as funcionalidades parecidas com a do próprio client.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Logo abaixo você poderá ver algumas telas já existentes no projeto com funcionalidades (ou não).
+<p align="start">
+    <img src="https://i.imgur.com/yh35A4L.png">
+</p>
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Começando
 
-### Lints and fixes files
+Para inicilizar esse projeto, é necessário ter duas ferramentas instaladas em sua máquina, o [Git](https://git-scm.com/) e o [Node.js](https://nodejs.org/).
+
+- Clone o projeto com os comando abaixo:
 ```
-npm run lint
+$ git clone git@github.com:immichjs/riot-client-clone.git
+
+$ cd riot-client-clone
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Logo após, instale todas as dependencias com:
+```
+$ npm i
+```
+
+### Para iniciar um servidor de desenvolvimento
+```
+$ npm run serve
+```
+
+### Compila todo o projeto para produção
+```
+$ npm run build
+```
+
+Leia as documentações abaixo para continuar seu desenvolvimento com essas tecnologias.
+
+- [Sass](https://sass-lang.com)
+- [Vue.js](https://br.vuejs.org/)
+- [Vuex](https://vuex.vuejs.org/ptbr/guide/)
+- [Boxicons](https://boxicons.com/usage/)
+
+<p align="center">Feito com 💖 por Mich</p>
+

@@ -1,14 +1,12 @@
 <template>
   <div id="app">
-    <Home message="Bem-vindo a sua aplicação Vue.js"/>
-    <footer>
-      <p>Template made by Mich ❤</p>
-    </footer>
+    <Client />
   </div>
 </template>
 
 <script>
-import Home from './components/Home/Home.vue'
+// import components
+import Client from '@/components/Client/Client'
 
 export default {
   name: 'App',
@@ -21,7 +19,7 @@ export default {
     }
   },
   components: {
-    Home
+    Client
   }
 }
 </script>
