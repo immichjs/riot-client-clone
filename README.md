@@ -4,7 +4,7 @@ O intuíto desse projeto, é clonar o client do League of Legends (RiotGames) ao
 
 Logo abaixo você poderá ver algumas telas já existentes no projeto com funcionalidades (ou não).
 <p align="start">
-    <img src="https://i.imgur.com/yh35A4L.png">
+    <img src="https://i.imgur.com/neVem07.png">
 </p>
 
 ## Começando
