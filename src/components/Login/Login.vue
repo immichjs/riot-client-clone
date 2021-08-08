@@ -5,7 +5,7 @@
     </div>
 
     <div class="top-container">
-      <img src="@/assets/images/lol-logo.svg">
+      <img src="@/assets/svg/lol-logo.svg">
       <h1>Fazer login</h1>
     </div>
 

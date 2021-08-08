@@ -11,8 +11,8 @@ import Client from '@/components/Client/Client'
 export default {
   name: 'App',
   metaInfo: {
-    title: 'League of Legends',
-    titleTemplate: '%s | Client in development',
+    title: 'Riot Client',
+    titleTemplate: '%s | In development',
     htmlAttrs: {
       lang: 'pt-br',
       amp: true
