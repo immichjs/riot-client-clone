@@ -72,7 +72,7 @@ export default {
     user: {
       deep: true,
       handler () {
-        if (this.user.username.length >= 2 && this.user.password) {
+        if (this.user.username.trim().length >= 2 && this.user.password.trim()) {
           this.activeLoginButton = true
         } else {
           this.activeLoginButton = false

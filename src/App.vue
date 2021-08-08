@@ -12,7 +12,7 @@ export default {
   name: 'App',
   metaInfo: {
     title: 'League of Legends',
-    titleTemplate: '%s | Client',
+    titleTemplate: '%s | Client in development',
     htmlAttrs: {
       lang: 'pt-br',
       amp: true
