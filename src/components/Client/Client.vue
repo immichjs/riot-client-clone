@@ -1,9 +1,7 @@
 <template>
   <div class="client-container">
     <Login />
-    <div class="temp">
-      <Main />
-    </div>
+    <Main />
   </div>
 </template>
 

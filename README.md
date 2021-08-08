@@ -1,4 +1,4 @@
-# RIot Client Clone
+# Riot Client Clone
 
 O intuíto desse projeto, é clonar o client do League of Legends (RiotGames) aos poucos, primeiramente a interface e assim que possível melhorar as funcionalidades parecidas com a do próprio client.
 

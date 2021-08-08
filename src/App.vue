@@ -11,8 +11,8 @@ import Client from '@/components/Client/Client'
 export default {
   name: 'App',
   metaInfo: {
-    title: 'Vue.js + Sass',
-    titleTemplate: '%s | Template!',
+    title: 'League of Legends',
+    titleTemplate: '%s | Client',
     htmlAttrs: {
       lang: 'pt-br',
       amp: true
