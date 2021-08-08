@@ -47,7 +47,9 @@
         <a href="#">Criar conta</a>
       </div>
 
-      <p class="version">V36.0.2</p>
+      <div class="version">
+        <p>V36.0.2</p>
+      </div>
     </div>
   </div>
 </template>

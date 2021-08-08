@@ -1,11 +1,6 @@
 <template>
   <div class="main-container">
     <div class="main-content">
-      <div class="menu-app">
-        <button>_</button>
-        <button>?</button>
-        <button>X</button>
-      </div>
 
       <div class="alert-container">
         <div class="square">

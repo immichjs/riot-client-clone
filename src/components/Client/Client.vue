@@ -1,15 +1,20 @@
 <template>
   <div class="client-container">
-    <Login />
-    <Main />
+    <MenuBar />
+    <div class="content">
+      <Login />
+      <Main />
+    </div>
   </div>
 </template>
 
 <script>
+import MenuBar from '../MenuBar/MenuBar'
 import Login from '../Login/Login'
 import Main from '../Main/Main'
 export default {
   components: {
+    MenuBar,
     Login,
     Main,
   }
