@@ -40,6 +40,16 @@
     gap: 0.5rem;
     margin-top: 1.25rem;
 
+    div:nth-child(2) {
+      position: relative;
+
+      .password-status {
+        position: absolute;
+        top: 15px;
+        right: 1rem;
+      }
+    }
+
     input[type="password"] {
       letter-spacing: 0.15rem;
     }

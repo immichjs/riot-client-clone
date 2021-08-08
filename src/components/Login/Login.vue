@@ -15,8 +15,10 @@
         <label alt="Nome de usuário" placeholder="Nome de usuário"></label>
       </div>
       <div>
-        <input required='' type='password' v-model="user.password">
+        <input required='' :type='passwordType' v-model="user.password">
         <label alt="Senha" placeholder="Senha"></label>
+        <box-icon name='hide' class="password-status" type='solid' color="#000" v-if="passwordType === 'password'" @click="changePassowordType"></box-icon>
+        <box-icon name='show' class="password-status" type='solid'  color="#000" v-if="passwordType === 'text'" @click="changePassowordType"></box-icon>
       </div>
 
       <div class="other-accesses">
@@ -56,7 +58,15 @@ export default {
     return {
       user: { username: '', password: '' },
       activeLoginButton: false,
+      passwordType: 'password',
     }
+  },
+  methods: {
+    changePassowordType () {
+      this.passwordType === 'password'
+        ? this.passwordType = 'text'
+        : this.passwordType = 'password'
+    },
   },
   watch: {
     user: {
