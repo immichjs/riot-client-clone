@@ -229,6 +229,10 @@
     .active-login-button {
       background-color: #D13639;
       border: none;
+    
+      svg {
+        fill: #fff;
+      }
     }
     
     .account-stuations {
