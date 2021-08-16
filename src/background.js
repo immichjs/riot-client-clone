@@ -20,7 +20,7 @@ async function createWindow() {
     resizable: false,
     icon: 'public/riot-client-icon.ico',
     webPreferences: {
-      devTools: false,
+      // devTools: false,
       nodeIntegration: process.env.ELECTRON_NODE_INTEGRATION,
       contextIsolation: !process.env.ELECTRON_NODE_INTEGRATION
     }
