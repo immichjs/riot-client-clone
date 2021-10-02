@@ -35,7 +35,7 @@ $ npm run build
 
 Leia as documentações abaixo para continuar seu desenvolvimento com essas tecnologias.
 
-- [Sass](https://sass-lang.com)
+- [SCSS](https://sass-lang.com)
 - [Vue.js](https://br.vuejs.org/)
 - [Vuex](https://vuex.vuejs.org/ptbr/guide/)
 - [Boxicons](https://boxicons.com/usage/)
