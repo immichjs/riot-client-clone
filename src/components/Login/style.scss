@@ -1,17 +1,70 @@
 .login-container {
-  width: 400px;
-  height: 100%;
+  width: 430px;
   background: #F9F9F9;
-  padding: 3rem;
+  padding: 3.25rem;
 
   .helper-container {
     display: flex;
     justify-content: flex-end;
     transition: 0.2s;
-    
-    &:hover {
-      filter: brightness(0.90);
+    position: relative;
+
+    div {
+      svg:hover {
+        filter: brightness(0.90);
+      }
+
+      &:hover {
+        div {
+          display: flex;
+        }
+      }
+      
+      div {
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        position: absolute;
+        top: -2.4rem;
+        right: -20.25rem;
+        width: 20rem;
+        padding: 1.5rem;
+        border-radius: .25rem;
+        z-index: 10;
+        display: none;
+        gap: 1rem;
+        flex-wrap: wrap;
+        
+        p {
+          font-size: 0.75rem;
+          font-weight: 600;
+          svg {
+            display: flex;
+            align-items: center;
+          }
+
+          a {
+            text-decoration: none;
+            font-size: 0.75rem;
+            color: #D1383B;
+          }
+        }
+        
+        &::after {
+          content: '';
+          width: 1.5rem;
+          height: 1.5rem;
+          transform: rotate(45deg);
+          position: absolute;
+          top: 2.25rem;
+          left: -.75rem;
+          background-color: #f9f9f9;
+          box-shadow: -8px 8px 10px rgba(0, 0, 0, .1);
+          z-index: 9;
+          border-radius: .15rem;
+        }
+      }
     }
+    
   }
 
   .top-container {
@@ -20,11 +73,10 @@
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
-    margin-top: 0.5rem;
     user-select: none;
     
     img {
-      width: 48px;
+      width: 40px;
       -webkit-user-drag: none;
     }
 
@@ -45,8 +97,8 @@
 
       .password-status {
         position: absolute;
-        top: 15px;
-        right: 1rem;
+        top: 12px;
+        right: 0.75rem;
         cursor: pointer;
       }
     }
@@ -58,7 +110,7 @@
     input[type="text"], input[type="password"] {
       box-sizing: border-box;
       width: 100%;
-      height: 54px;
+      height: 48px;
       margin: 0 0 0.5rem;
       padding: 0 0.75rem;
       background: #EDEDED;
@@ -82,7 +134,7 @@
       &[required]:focus + label[placeholder]:before,
       &[required]:valid + label[placeholder]:before {
         transition-duration: .1s;
-        transform: translateY(-1rem) translateX(-0.32rem);
+        transform: translateY(-0.75rem) translateX(-0.30rem);
         font-size: 0.65rem;
       }
       
@@ -94,10 +146,10 @@
         display: block;
         pointer-events: none;
         line-height: 1em;
-        font-size: 0.75rem;
+        font-size: 0.65rem;
         font-weight: 700;
         text-transform: uppercase;
-        margin-top: calc(-3em - 2px);
+        margin-top: calc(-3.25em - 2px);
         margin-bottom: calc((3em - 1em) + 2px);
         margin-left: 1rem;
       }
@@ -121,7 +173,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0.30rem;
+        padding: 0.25rem;
         border-radius: 0.25rem;
         cursor: pointer;
         transition: .2s;
@@ -174,7 +226,6 @@
         font-weight: 600;
       }
 
-
       input[type="checkbox"] + label:before {
         border: none;
         background: #EDEDED;
@@ -193,10 +244,10 @@
       input[type="checkbox"]:checked + label:before {
         background: #D13639;
         color: #fff;
-        content: "✔";
+        content: '✔';
         text-align: center;
       }
-
+      
       input[type="checkbox"]:checked + label {
         color: #111;
       }
@@ -211,15 +262,15 @@
     }
 
     .login-button {
-      border: 3px solid #e8e8e8;
-      width: 4.5rem;
-      height: 4.5rem;
-      border-radius: 1.5rem;
+      border: 2px solid #e8e8e8;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 1.25rem;
       display: flex;
       align-items: center;
       justify-content: center;
       align-self: center;
-      margin-top: 6rem;
+      margin-top: 4rem;
       cursor: pointer;
       transition: 0.2s;
       
@@ -231,19 +282,23 @@
     .active-login-button {
       background-color: #D13639;
       border: none;
+    
+      svg {
+        fill: #fff;
+      }
     }
     
     .account-stuations {
       text-transform: uppercase;
       display: flex;
       flex-direction: column;
-      text-align: center;
-      margin-top: 4rem;
+      align-items: center;
+      margin-top: 3rem;
       user-select: none;
       
       a {
         text-decoration: none;
-        font-size: 0.75rem;
+        font-size: 0.65rem;
         font-weight: 700;
         color: #9E9E9E;
         transition: 0.2s;
@@ -255,12 +310,17 @@
     }
     
     .version {
-      font-size: 0.75rem;
       font-weight: 700;
       color: #9E9E9E;
-      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
       cursor: pointer;
       user-select: none;
+
+      p {
+        font-size: 0.75rem;
+      }
       
       &:hover {
         filter: brightness(0.64);
